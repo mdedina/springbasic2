@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Form Handling</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+    	span{
+    		font-weight: bold;
+    	}
+    	.box {
+    		border: 2px solid black;
+    		margin: 5px;
+    		width: 50%;
+    		
+    	}
+    	.message {
+    		border: 2px solid black;
+    		margin: 5px;
+    		width: 50%;
+    		background-color: lime;
+    	}
+    </style>
+</head>
+<body>
+	<div class="message">
+	Thank you for submitting this form! You have submitted this form <span th:text="${session.count}"></span> times. 
+	</div>
+	<div class="box">
+		<h2>Submitted Information</h2>
+		<p>
+			Name: <span th:text="${name}"></span> <br />
+			Dojo Location: <span th:text="${location}"></span> <br />
+			Favorite Language: <span th:text="${language}"></span> <br />
+			Comment: <span th:text="${comment}"></span>
+		</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Form Handling</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h2>CodingDojo Application Form</h2>
+	<form action="/users/create" method="post">
+		<p>
+			<label name="name">Your Name:</label>
+			<input type="text" name="name" value="Joe" />
+		</p>
+		<p>
+			<label name="location">Dojo Location:</label>
+			<select name="location">
+				<option value="Seattle">Seattle</option>
+				<option value="Mountain View" selected="selected">Mountain View</option>
+			</select>
+		</p>
+		<p>
+			<label name="language">Favorite Language:</label>
+			<select name="language">
+				<option value="Javascript">Javascript</option>
+				<option value="PHP">PHP</option>
+				<option value="Java">Java</option>
+			</select>
+		</p>
+		<p>Comment (optional):</p>
+		<p>
+			<textarea name="comment"></textarea>
+		</p>
+		<input type="submit" value="Apply" />
+	</form>
+</body>
+</html>
